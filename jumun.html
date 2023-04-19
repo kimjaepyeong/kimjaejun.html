@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품 주문서</title>
+</head>
+<body>
+    <h1><strong>상품 주문서</strong></h1>
+    <form>
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                <li><label>주문자이름</label><input type="text"></li>
+                <li><label>전화번호</label><input type="tel"></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+        <legend>배송정보</legend>
+            <ul>
+                <li><a>배송옵션 : </a><label><input type="radio">기존배송지</label><label><input type="radio">새배송지</label></li>
+                <li><label>주소</label><input type="text"></li>
+                <li><label>요청사항<select>
+                    <option>요청사항을 선택하세요</option>
+                    <option>부재시 집 앞에 두고 가주세요</option>
+                    <option>택배 도착전에 미리 연락 주세요</option>
+                </select></label></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>주문정보</legend>
+            <p>상품</p>
+            <ul>
+                <li><input type="checkbox"><label>방울토마토1kg <s>10,000원</s><strong>8,000원</strong><input type="text">박스</label></li>
+                <li><input type="checkbox"><label>방울토마토2kg <s>20,000원</s><strong>16,000원</strong><input type="text">박스</label></li>
+                <li><input type="checkbox"><label>방울토마토3kg <s>30,000원</s><strong>24,000원</strong><input type="text">박스</label></li>
+            </ul>
+            <a>기타사항</a><input type="text">
+        </fieldset>
+        <fieldset>
+            <legend>결제수단</legend>
+            <ul>
+                <li><input type="radio" name="결제수단"><label>계좌 이체</label></li>
+                <li><input type="radio" name="결제수단"><label>카드 결제</label></li>
+                <li><input type="radio" name="결제수단"><label>일반 결제</label></li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
+
